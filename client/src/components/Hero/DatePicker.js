@@ -12,7 +12,7 @@ export default function DatePick(props) {
             onChange={props.handleChange}
             className="main-date"
             minDate={new Date("10/01/2021")}
-            maxDate={new Date("04/04/2022")}
+            maxDate={new Date("05/02/2022")}
             dateFormat="M/d"
             calendarClassName="datepicker-calendar"
         />
