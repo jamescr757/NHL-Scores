@@ -191,11 +191,11 @@ const DivisionTable = (props) => {
                 ))}
                 {records.length > 0 && renderConferenceRow("Western Conference", true)}
                 {records.length > 0 && renderCategoryRow("Central")} 
-                {records.slice(16, 23).map((entry, index) => (
+                {records.slice(16, 24).map((entry, index) => (
                     renderTeamRow(entry, index, false)
                 ))}
                 {records.length > 0 && renderCategoryRow("Pacific")}
-                {records.slice(23).map((entry, index) => (
+                {records.slice(24).map((entry, index) => (
                     renderTeamRow(entry, index, false)
                 ))}
             </Grid>

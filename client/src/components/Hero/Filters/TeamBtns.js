@@ -25,8 +25,8 @@ const TeamBtns = (props) => {
 
     const atlanticTeams = teamInfo.teamsArray.slice(0, 8);
     const metroTeams = teamInfo.teamsArray.slice(8, 16);
-    const centralTeams = teamInfo.teamsArray.slice(16, 23);
-    const pacificTeams = teamInfo.teamsArray.slice(23);
+    const centralTeams = teamInfo.teamsArray.slice(16, 24);
+    const pacificTeams = teamInfo.teamsArray.slice(24);
 
     const toLogic = (team) => {
         

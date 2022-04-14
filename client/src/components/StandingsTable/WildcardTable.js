@@ -48,7 +48,7 @@ const WildcardTable = () => {
             playoffTeams[entry.team] = true;
         });
 
-        divisionEntries.slice(23, 26).forEach(entry => {
+        divisionEntries.slice(24, 27).forEach(entry => {
             playoffTeams[entry.team] = true;
         });
 
@@ -246,7 +246,7 @@ const WildcardTable = () => {
                     renderTeamRow(entry, index, false)
                 ))}
                 {records.top3.length > 0 && renderCategoryRow("Pacific", true)}
-                {records.top3.slice(23, 26).map((entry, index) => (
+                {records.top3.slice(24, 27).map((entry, index) => (
                     renderTeamRow(entry, index, false)
                 ))}
                 {records.wildcard.length > 0 && renderCategoryRow("Wildcard", false)}

@@ -48,7 +48,7 @@ const PlayoffTable = () => {
             top3DivisionTeams[entry.team] = true;
         });
 
-        divisionEntries.slice(23, 26).forEach(entry => {
+        divisionEntries.slice(24, 27).forEach(entry => {
             top3DivisionTeams[entry.team] = true;
         });
 
@@ -70,7 +70,7 @@ const PlayoffTable = () => {
         const atlantic = ["1", "4", divisionEntries[1], divisionEntries[2]];
         const metro = ["1", "4", divisionEntries[9], divisionEntries[10]];
         const central = ["1", "4", divisionEntries[17], divisionEntries[18]];
-        const pacific = ["1", "4", divisionEntries[24], divisionEntries[25]];
+        const pacific = ["1", "4", divisionEntries[25], divisionEntries[26]];
 
         if (conferenceEntries[0].division === "Atlantic") {
             atlantic[0] = conferenceEntries[0];
@@ -87,7 +87,7 @@ const PlayoffTable = () => {
         if (conferenceEntries[16].division === "Central") {
             central[0] = conferenceEntries[16];
             central[1] = westWildcardEntries[1];
-            pacific[0] = divisionEntries[23];
+            pacific[0] = divisionEntries[24];
             pacific[1] = westWildcardEntries[0];
         } else {
             pacific[0] = conferenceEntries[16];
