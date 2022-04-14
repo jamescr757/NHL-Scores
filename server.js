@@ -32,7 +32,7 @@ db.sequelize.sync(syncOptions)
     // require("./scrape/deleteFuture")(db);
     require("./scrape/updateRecords")(db);
     // require("./scrape/allCompleted")(db);
-    require("./scrape/allFuture")(db);
+    // require("./scrape/allFuture")(db);
 
     // set second input to > 10 if want to just update way in advance games
     require("./scrape/tixAndGameTime")(db, 15);
