@@ -23,7 +23,7 @@ const Footer = () => {
                 Built with React
             </Typography>
             <Typography variant="body2" color="textSecondary" align="center">
-                {'Copyright © '}{2020}
+                {'Copyright © '}{2022}
             </Typography>
         </footer>
     );
