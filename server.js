@@ -28,6 +28,7 @@ if (process.env.NODE_ENV === "test") {
 db.sequelize.sync(syncOptions)
   .then(() => {
 
+    require("./models/seed/StandingsSeeds");
     require("./scrape/newCompleted")(db);
     // require("./scrape/deleteFuture")(db);
     require("./scrape/updateRecords")(db);
