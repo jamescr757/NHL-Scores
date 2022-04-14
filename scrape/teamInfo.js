@@ -1,7 +1,7 @@
 
 module.exports = {
     
-    teamsArray: ["bruins", "sabres", "red wings", "panthers", "canadiens", "senators", "lightning", "maple leafs", "hurricanes", "blue jackets", "devils", "islanders", "rangers", "flyers", "penguins", "capitals", "blackhawks", "avalanche", "stars", "wild", "predators", "blues", "jets", "ducks", "coyotes", "flames", "oilers", "kraken", "golden knights", "kings", "sharks", "canucks"],
+    teamsArray: ["bruins", "sabres", "red wings", "panthers", "canadiens", "senators", "lightning", "maple leafs", "hurricanes", "blue jackets", "devils", "islanders", "rangers", "flyers", "penguins", "capitals", "coyotes", "blackhawks", "avalanche", "stars", "wild", "predators", "blues", "jets", "ducks", "flames", "oilers", "kings", "sharks", "kraken", "canucks", "golden knights"],
 
     teamIDGenerator(teamName) {
         return this.teamsArray.indexOf(teamName);
@@ -14,7 +14,7 @@ module.exports = {
 
         else if (teamIndex <= 15 && teamIndex > -1) return "Metropolitan";
 
-        else if (teamIndex <= 22 && teamIndex > -1) return "Central";
+        else if (teamIndex <= 23 && teamIndex > -1) return "Central";
 
         else if (teamIndex > 0) return "Pacific";
 
@@ -26,9 +26,9 @@ module.exports = {
 
         if (teamIndex <= 15 && teamIndex > -1) return -1;
 
-        else if (teamIndex === 17 || teamIndex === 24 || teamIndex === 25 || teamIndex === 26) return 1;
+        else if (teamIndex === 16 || teamIndex === 18 || teamIndex === 25 || teamIndex === 26) return 1;
 
-        else if (teamIndex <= 22 && teamIndex > -1) return 0;
+        else if (teamIndex <= 23 && teamIndex > -1) return 0;
 
         else if (teamIndex > 0) return 2;
 

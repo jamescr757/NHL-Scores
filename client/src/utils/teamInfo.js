@@ -1,7 +1,7 @@
 
 export default {
     
-    teamsArray: ["bruins", "sabres", "red wings", "panthers", "canadiens", "senators", "lightning", "maple leafs", "hurricanes", "blue jackets", "devils", "islanders", "rangers", "flyers", "penguins", "capitals", "blackhawks", "avalanche", "stars", "wild", "predators", "blues", "jets", "ducks", "coyotes", "flames", "oilers", "kraken", "golden knights", "kings", "sharks", "canucks"],
+    teamsArray: ["bruins", "sabres", "red wings", "panthers", "canadiens", "senators", "lightning", "maple leafs", "hurricanes", "blue jackets", "devils", "islanders", "rangers", "flyers", "penguins", "capitals", "coyotes", "blackhawks", "avalanche", "stars", "wild", "predators", "blues", "jets", "ducks", "flames", "oilers", "kings", "sharks", "kraken", "canucks", "golden knights"],
 
     teamIDGenerator(teamName) {
         return this.teamsArray.indexOf(teamName);
@@ -14,7 +14,7 @@ export default {
 
         else if (teamIndex <= 15 && teamIndex > 0) return "Metropolitan";
 
-        else if (teamIndex <= 22 && teamIndex > 0) return "Central";
+        else if (teamIndex <= 23 && teamIndex > 0) return "Central";
 
         else if (teamIndex > 0) return "Pacific";
 
