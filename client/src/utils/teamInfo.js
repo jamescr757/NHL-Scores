@@ -1,7 +1,7 @@
 
 export default {
     
-    teamsArray: ["bruins", "sabres", "red wings", "panthers", "canadiens", "senators", "lightning", "maple leafs", "hurricanes", "blue jackets", "devils", "islanders", "rangers", "flyers", "penguins", "capitals", "blackhawks", "avalanche", "stars", "wild", "predators", "blues", "jets", "ducks", "coyotes", "flames", "oilers", "golden knights", "kings", "sharks", "canucks"],
+    teamsArray: ["bruins", "sabres", "red wings", "panthers", "canadiens", "senators", "lightning", "maple leafs", "hurricanes", "blue jackets", "devils", "islanders", "rangers", "flyers", "penguins", "capitals", "blackhawks", "avalanche", "stars", "wild", "predators", "blues", "jets", "ducks", "coyotes", "flames", "oilers", "kraken", "golden knights", "kings", "sharks", "canucks"],
 
     teamIDGenerator(teamName) {
         return this.teamsArray.indexOf(teamName);
@@ -110,6 +110,8 @@ export default {
                 return "calgary flames"
             case "oilers":
                 return "edmonton oilers"
+            case "kraken":
+                return "seattle kraken"
             case "golden knights":
                 return "vegas golden knights"
             case "kings":
@@ -181,6 +183,8 @@ export default {
                 return "Calgary Flames"
             case "oilers":
                 return "Edmonton Oilers"
+            case "kraken":
+                return "Seattle Kraken"
             case "golden knights":
                 return "Vegas Golden Knights"
             case "kings":
@@ -252,6 +256,8 @@ export default {
                 return "Calgary"
             case "oilers":
                 return "Edmonton"
+            case "kraken":
+                return "Seattle"
             case "golden knights":
                 return "Vegas"
             case "kings":
@@ -323,6 +329,8 @@ export default {
                 return "CGY"
             case "oilers":
                 return "EDM"
+            case "kraken":
+                return "SEA"
             case "golden knights":
                 return "VGK"
             case "kings":
@@ -394,6 +402,8 @@ export default {
                 return "flames"
             case "edmonton oilers":
                 return "oilers"
+            case "seattle kraken":
+                return "kraken"
             case "vegas golden knights":
                 return "golden knights"
             case "los angeles kings":

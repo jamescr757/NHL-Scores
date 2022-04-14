@@ -1,7 +1,7 @@
 
 module.exports = {
     
-    teamsArray: ["bruins", "sabres", "red wings", "panthers", "canadiens", "senators", "lightning", "maple leafs", "hurricanes", "blue jackets", "devils", "islanders", "rangers", "flyers", "penguins", "capitals", "blackhawks", "avalanche", "stars", "wild", "predators", "blues", "jets", "ducks", "coyotes", "flames", "oilers", "golden knights", "kings", "sharks", "canucks"],
+    teamsArray: ["bruins", "sabres", "red wings", "panthers", "canadiens", "senators", "lightning", "maple leafs", "hurricanes", "blue jackets", "devils", "islanders", "rangers", "flyers", "penguins", "capitals", "blackhawks", "avalanche", "stars", "wild", "predators", "blues", "jets", "ducks", "coyotes", "flames", "oilers", "kraken", "golden knights", "kings", "sharks", "canucks"],
 
     teamIDGenerator(teamName) {
         return this.teamsArray.indexOf(teamName);
@@ -126,6 +126,8 @@ module.exports = {
                 return "calgary flames"
             case "oilers":
                 return "edmonton oilers"
+            case "kraken":
+                return "seattle kraken"
             case "golden knights":
                 return "vegas golden knights"
             case "kings":
@@ -195,6 +197,8 @@ module.exports = {
                 return "cgy"
             case "oilers":
                 return "edm"
+            case "kraken":
+                return "sea"
             case "golden knights":
                 return "vgs"
             case "kings":

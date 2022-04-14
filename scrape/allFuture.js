@@ -5,7 +5,7 @@ const teamInfo = require("./teamInfo");
 
 module.exports = function scrapeAllFuture(db) {
 
-    const nhlEndDate = moment("04/04/2020", "MM/DD/YYYY").format("YYYYMMDD");
+    const nhlEndDate = moment("05/01/2022", "MM/DD/YYYY").format("YYYYMMDD");
 
     const today = moment().utcOffset(-7).format("YYYYMMDD");
 
